@@ -158,84 +158,60 @@ header {
     margin: 0 auto;    
 }
 
-.banner {
-    
-}
-
-.container {
-    max-width: 1180px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
 .banner-box {
     background-image: url(../images/banner.jpg);
-    width: 1180px;
-    height: 438px;
-    left: 370px;
-    right: 370px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 100px;
 }
 
 .banner-title {
-    font-family: 'Nunito Sans', sans-serif;
     color: #FFFFFF;
     font-weight: 900;
     font-size: 60px;
-    line-height: 76px;
-    margin-left: 100px;
-    margin-top: 100px;
-      
+    margin-top: 0;
+    margin-bottom: 7px;    
 }
 
-.pricedrop {
+.banner-title span {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 14px;
-    line-height: 18px; 
+    display: block;
+    max-width: 95px;
+    padding: 5px 0;
+    text-align: center; 
     text-transform: uppercase;
     background-color: #F37335;
     border-radius: 14px;
-    padding-left: 19px;
-    padding-right: 19px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-top: 200px;
+    margin-bottom: -1px;
 }
 
 .banner-text {
     font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
     font-size: 15px;
-    line-height: 24px;
+    line-height: 1.6;
     color: #FAF9F9;
     max-width: 353px;
-    margin-left: 100px;
-     
+    margin-top: 0;
+    margin-bottom: 32px;
 
 }
 
 
 .banner-link {
-    font-family: 'Nunito Sans', sans-serif;
     font-weight: 700;
     font-size: 14px;
     text-decoration: none;
     color: #1E2F40;
     text-transform: uppercase;
+    background-color: #FBB731;
+    border-radius: 5px;
+    padding: 20px 25px;
 }
     
 
-.banner-button {
-    background-color: #FBB731;
-    border: none;
-    width: 170px;
-    height: 58px;
-    border-radius: 5px;
-    margin-left: 100px;
-    padding: 20px 10px 20px 10px;
-    margin-bottom: 100px;
-}
 
     
 
