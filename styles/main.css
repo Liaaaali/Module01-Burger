@@ -172,7 +172,7 @@ header {
     background-size: cover;
     background-position: center center;
     padding: 100px 100px 120px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .banner-title {
@@ -218,6 +218,7 @@ header {
     border-radius: 5px;
     padding: 18px 25px;
     border: 1px solid #FBB731;
+    transition: 0.3s;
 }
 
 .banner-link:hover {
@@ -225,7 +226,9 @@ header {
     color: #FBB731;
 }
 
-
+.menu {
+    padding-top: 20px;
+}
 
 .menu-header {
     display: flex;
@@ -400,6 +403,35 @@ header {
 
 .footer-list {
     padding-left: 0;
+}
+
+.button-up {
+    background-color:#FBB731;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    color: #1E2F40;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: 1s;
+}
+
+.button-up.hidden {
+    opacity: 0;
+}
+
+.button-up.visible {
+    opacity: 1;
+}
+
+.button-up:hover {
+    background-color: #F37335;
+    cursor: pointer;
 }
 
 /* style INDEX */
