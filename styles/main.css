@@ -2,12 +2,13 @@ body {
     font-family: 'Nunito Sans', sans-serif;
 }
 
-.container {
+.container-header {
     max-width: 1180px;
-    margin: 0 auto;
+    margin: 0 94px;
     padding-left: 15px;
     padding-right: 15px;
 }
+
 
 header {
     border-bottom: 1px solid #DEDEDE;
@@ -103,6 +104,13 @@ header {
     right: -4px;
 }
 
+.container-banner {
+    max-width: 1180px;
+    margin: 0 97px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .bg {
     text-align: center;
     color: white;
@@ -151,8 +159,8 @@ header {
 .title {
     font-weight: 700;
     font-size: 79px;
-    margin-top: -12px;
-    margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
 
 }
 
@@ -180,7 +188,7 @@ header {
     font-weight: 900;
     font-size: 60px;
     margin-top: 0;
-    margin-bottom: 22px;    
+    margin-bottom: 23px;    
 }
 
 .banner-title span {
@@ -203,9 +211,6 @@ header {
     line-height: 1.6;
     color: #FAF9F9;
     max-width: 353px;
-    margin-top: 0;
-    margin-bottom: 37px;
-
 }
 
 .banner-link {
@@ -216,9 +221,12 @@ header {
     text-transform: uppercase;
     background-color: #FBB731;
     border-radius: 5px;
-    padding: 18px 25px;
+    padding: 18px 0px;
     border: 1px solid #FBB731;
     transition: 0.3s;
+    display: block;
+    max-width: 170px;
+    text-align: center;
 }
 
 .banner-link:hover {
@@ -228,6 +236,13 @@ header {
 
 .menu {
     padding-top: 20px;
+}
+
+.container-menu {
+    max-width: 1180px;
+    margin: -17px 97px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .menu-header {
@@ -320,7 +335,7 @@ header {
     height: 38px;
     margin: 0 auto;
     display: flex;
-    margin-bottom: -52px;
+    margin-bottom: 0px;
     justify-content: space-around;
     align-items: center;
     padding: 21px;
@@ -340,32 +355,46 @@ header {
   
 }
 
+.container-menu-other {
+    max-width: 1180px;
+    margin: -10px 97px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container-footer {
+    max-width: 1180px;
+    margin: -14px 97px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .footer {
     background: #1E2F40;
     color: #fff;
-    padding-top: 117px;
+    padding-top: 133px;
     padding-bottom: 106px;
-    margin-top: 240px;
+    margin-top: 149px;
 }
 
 .footer-box {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .footer-logo {
     width: 63px;
     height: 56px;
 }
-.footer-item {
-    flex: 0 0 auto;
-}
+
 .footer-item h2 {
     font-size: 20px;
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 19px;
     margin-top: 0;
+    line-height: 1.5;
 }
 
 .footer-list li {
@@ -616,20 +645,33 @@ header {
 
 /* Responsive */
 
+
 @media (min-width: 1001px) {
     .footer-list + .footer-list-tel {
     display: none;
     }
 }
 
-@media (min-width: 766px) {
+@media (min-width: 951px) {
     .header-burger {
         display: none;
 
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1153px) {
+    .menu-grid-title {
+        font-size: 28px;
+    } 
+}
+
+@media (max-width: 1102px) {
+    .menu-grid-title {
+        font-size: 24px;
+    } 
+}
+
+@media (max-width: 1150px) {
     .container {
         max-width: 738px;
     }
@@ -647,6 +689,10 @@ header {
     .header-item {
         flex-basis: 75.5%;
     }
+
+}
+
+@media (max-width: 1001px) {
 
     .bg {
         margin-bottom: 72px;
@@ -691,17 +737,150 @@ header {
     .footer-list + .footer-list-tel {
         display: block;
     }
+}
 
-    @media (max-width: 765px) {
+@media (max-width: 950px) {
         nav {
             display: none;
         }
         .header {
             gap: 21px
         }
+}
+
+ @media (max-width: 831px) {
+        .footer-item h2 {
+            font-size: ;
+        }
+
+        .menu-grid-cover {
+        height: 340px;
     }
 
-    @media (max-width: 567px) {
+        .menu-grid-title {
+            font-size: 24px;
+        }
+}
+
+@media (max-width: 765px) {
+        nav {
+            display: none;
+        }
+        .header {
+            gap: 21px
+        }
+
+        .menu-title {
+            font-size: 27px;
+        }
+
+        .menu-select {
+            flex-basis: 230px;
+        }
+
+        .button-up.visible {
+            display: none;
+        }
+}
+
+@media (max-width: 730px) {
+        .menu-grid-title {
+            font-size: 22px;
+        }
+}
+
+@media (max-width: 706px) {
+    .footer {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .footer-list + .footer-list-tel {
+        display: none;
+    }
+    .footer-tel {
+        display: block;
+    }
+    .footer-box {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-areas: "logo tel" "link link" "info info";
+        gap: 0;
+    }
+    .footer-item:nth-child(1) {
+        grid-area: logo;
+    }
+    .footer-item:nth-child(2) {
+        grid-area: link;
+    }
+    .footer-item:nth-child(3) {
+        grid-area: info;
+    }
+    .footer-tel {
+        grid-area: tel;
+        text-align: right;
+    }
+    }
+
+@media (max-width: 697px) {
+        .menu-grid-title {
+            font-size: 20px;
+        }
+}
+
+@media (max-width: 685px) {
+        .title {
+            font-size: 64px;
+        }
+
+        .description {
+            font-size: 14px
+        }
+
+        .menu-select {
+            flex-basis: 210px;
+        }
+
+        .banner-box {
+            padding: 35px 15px 34px 28px;
+
+        }
+}
+
+@media (max-width: 663px) {
+        .menu-grid-title {
+            font-size: 18px;
+        }  
+} 
+
+@media (max-width: 629px) {
+    .menu-grid-cover {
+        height: 240px;
+    } 
+
+    .menu-grid-title {
+        font-size: 14px;
+    } 
+    
+    .menu-grid-price {
+        font-size: 16px;
+    }
+}     
+
+@media (max-width: 597px) {
+        .title {
+            font-size: 60px;
+        }
+} 
+
+    
+@media (max-width: 574px) {
+        .title {
+            font-size: 56px;
+        }
+}
+   
+
+@media (max-width: 567px) {
         .breadcrumbs a {
             font-size: 14px;
         }
@@ -715,24 +894,32 @@ header {
 
         .bg {
             padding: 55px 0;
-            }
+        }
         .banner-box {
             background-position: 17% center;
-            padding: 35px 24px 54px; 
+            padding: 35px 24px 54px;     
         }
-        }
+}
 
-
-    @media (max-width: 360px) {
+@media (max-width: 360px) {
         .header-logo {
             width: 116px;
             height: 37px;
             background-size: contain;
         }
-    }
+}
 
-    @media (max-width: 320px) {
+@media (max-width: 320px) {
         .banner-box {
             background-position: 25% center;
         }
-    }}
+
+        .menu-grid-cover {
+            height: 180px;
+        }
+
+        .menu-grid-title {
+            font-size: 13px;
+        }
+
+}
