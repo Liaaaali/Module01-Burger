@@ -686,7 +686,7 @@ header {
         width: auto;
         overflow-x: scroll;
         overflow-y: hidden;
-        padding-bottom: 50px;
+        padding-bottom: 100px;
     }
 
     .menu-other .menu-grid-item {
